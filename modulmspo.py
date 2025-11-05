@@ -37,13 +37,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.title("feldalogo.png E-Modul MSPO FELDA")
-st.markdown("### Malaysian Sustainable Palm Oil (MSPO) Training Modules")
+st.title("E-Modul MSPO FELDA 2.0")
+st.markdown("### Modul Latihan Bagi Program Pensijilan Malaysian Sustainable Palm Oil (MSPO) 2.0")
 st.markdown("---")
 
 # Introduction
 st.markdown("""
-Selamat datang ke portal E-Modul MSPO FELDA. Sila pilih prinsip yang ingin anda akses untuk mendapatkan modul pembelajaran.
+Selamat datang ke portal E-Modul MSPO FELDA 2.0.
 """)
 
 st.markdown("---")
@@ -54,9 +54,9 @@ st.markdown("### 📢 Papan Pengumuman")
 # Announcements list - Edit this section to update announcements
 announcements = [
     {
-        "date": "05 Nov 2024",
-        "title": "FELDA Berjaya 100% MSPO! 🎉",
-        "content": "Tahniah! FELDA telah berjaya mencapai 100% pensijilan MSPO untuk semua ladang.",
+        "date": "November 2025",
+        "title": "FELDA Berjaya Capai 100% Pensijilan MSPO! 🎉",
+        "content": "Tahniah kepada semua rancangan yang terlibat. Alhamdulillah, FELDA telah berjaya mencapai 100% pensijilan MSPO untuk semua rancangan.",
         "type": "success"
     },
     {
