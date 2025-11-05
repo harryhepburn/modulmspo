@@ -32,6 +32,16 @@ st.markdown("""
         border-radius: 10px;
         margin-bottom: 1rem;
         border-left: 5px solid #2E7D32;
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .principle-title {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -105,7 +115,7 @@ modules = {
         "link": "https://onedrive.live.com/your-link-here-principle-1",
     },
     "Prinsip 2": {
-        "title": "Prinsip 2: Ketelusan                            ",
+        "title": "Prinsip 2: Ketelusan",
         "link": "https://onedrive.live.com/your-link-here-principle-2",
     },
     "Prinsip 3": {
@@ -120,7 +130,7 @@ modules = {
         "title": "Prinsip 5: Alam Sekitar, Sumber Asli, Kepelbagaian Biologi dan Penjagaan Ekosistem",
         "link": "https://onedrive.live.com/your-link-here-principle-5",
     },
-    "Manual FELDA": {
+    "Rujukan": {
         "title": "Dokumen Manual, Polisi dan Prosedur",
         "link": "https://onedrive.live.com/your-link-here-rujukan",
     }    
@@ -133,7 +143,9 @@ for idx, (key, module) in enumerate(modules.items()):
     with col1 if idx % 2 == 0 else col2:
         with st.container():
             st.markdown(f'<div class="principle-card">', unsafe_allow_html=True)
-            st.markdown(f"### {module['title']}")
+            st.markdown(f'<div class="principle-title">', unsafe_allow_html=True)
+            st.markdown(f"#### {module['title']}")
+            st.markdown('</div>', unsafe_allow_html=True)
             if st.button(f"📥 Akses {key}", key=key):
                 st.markdown(f"[Klik di sini untuk membuka modul]({module['link']})")
                 st.info(f"Anda akan dibawa ke OneDrive untuk mengakses {key}")
