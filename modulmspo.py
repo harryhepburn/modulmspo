@@ -37,7 +37,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.title("📚 E-Modul MSPO FELDA")
+st.title("feldalogo.png E-Modul MSPO FELDA")
 st.markdown("### Malaysian Sustainable Palm Oil (MSPO) Training Modules")
 st.markdown("---")
 
