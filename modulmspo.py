@@ -105,7 +105,7 @@ modules = {
         "link": "https://onedrive.live.com/your-link-here-principle-1",
     },
     "Prinsip 2": {
-        "title": "Prinsip 2: Ketelusan",
+        "title": "Prinsip 2: Ketelusan                                           ",
         "link": "https://onedrive.live.com/your-link-here-principle-2",
     },
     "Prinsip 3": {
