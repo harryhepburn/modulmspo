@@ -54,21 +54,23 @@ st.markdown("### 📢 Papan Pengumuman")
 # Announcements list - Edit this section to update announcements
 announcements = [
     {
-        "date": "November 2025",
+        "date": "1 November 2025",
         "title": "FELDA Berjaya Capai 100% Pensijilan MSPO! 🎉",
         "content": "Tahniah kepada semua rancangan yang terlibat. Alhamdulillah, FELDA telah berjaya mencapai 100% pensijilan MSPO untuk semua rancangan.",
         "type": "success"
     },
     {
-        "date": "Oktober 2024",
+        "date": "November 2025",
         "title": "Jadual Internal Audit Oktober",
-        "content": "Audit dalaman akan dijalankan pada 15-20 Oktober 2024. Sila pastikan semua dokumentasi lengkap.",
+        "content": "Audit dalaman Gugusan Jengka 18 akan dijalankan pada 5-7 November 2025.",
+        "content": "Audit dalaman Gugusan Maokil akan dijalankan pada 11-13 November 2025.",
+        "content": "Sila pastikan semua dokumentasi lengkap.",
         "type": "info"
     },
     {
-        "date": "Oktober 2024",
+        "date": "November 2025",
         "title": "Jadual External Audit Oktober",
-        "content": "Audit luaran MSPO dijadualkan pada 25-30 Oktober 2024. Kerjasama semua pihak amat diperlukan.",
+        "content": "Tiada Audit luaran MSPO dijadualkan pada bulan ini.",
         "type": "warning"
     }
 ]
@@ -89,30 +91,35 @@ st.markdown("---")
 # Module links dictionary - Replace with your actual OneDrive links
 modules = {
     "Prinsip 1": {
-        "title": "Prinsip 1: Pematuhan Kepada Undang-Undang dan Peraturan",
+        "title": "Prinsip 1: Komitmen dan Tanggungjawab Pengurusan",
         "link": "https://onedrive.live.com/your-link-here-principle-1",
-        "description": "Modul pembelajaran mengenai pematuhan undang-undang dan peraturan MSPO"
+        #"description": "Modul pembelajaran bagi Komitmen dan Tanggungjawab Pengurusan"
     },
     "Prinsip 2": {
-        "title": "Prinsip 2: Pengurusan Ladang dan Kemudahkerjaan",
+        "title": "Prinsip 2: Ketelusan",
         "link": "https://onedrive.live.com/your-link-here-principle-2",
-        "description": "Modul pembelajaran mengenai pengurusan ladang dan kemudahkerjaan"
+        #"description": "Modul pembelajaran mengenai pengurusan ladang dan kemudahkerjaan"
     },
     "Prinsip 3": {
-        "title": "Prinsip 3: Amalan Pertanian Yang Baik",
+        "title": "Prinsip 3: Pematuhan Kepada Undang-Undang dan Perkara Berkaitan",
         "link": "https://onedrive.live.com/your-link-here-principle-3",
-        "description": "Modul pembelajaran mengenai amalan pertanian yang baik"
+        #"description": "Modul pembelajaran mengenai amalan pertanian yang baik"
     },
     "Prinsip 4": {
-        "title": "Prinsip 4: Tanggungjawab Alam Sekitar",
+        "title": "Prinsip 4: Tanggungjawab Sosial, Kesihatan, Keselamatan dan Terma Pekerjaan",
         "link": "https://onedrive.live.com/your-link-here-principle-4",
-        "description": "Modul pembelajaran mengenai tanggungjawab alam sekitar"
+        #"description": "Modul pembelajaran mengenai tanggungjawab alam sekitar"
     },
     "Prinsip 5": {
-        "title": "Prinsip 5: Tanggungjawab Sosial dan Kesihatan Pekerja",
+        "title": "Prinsip 5: Alam Sekitar, Sumber Asli, Kepelbagaian Biologi dan Penjagaan Ekosistem",
         "link": "https://onedrive.live.com/your-link-here-principle-5",
-        "description": "Modul pembelajaran mengenai tanggungjawab sosial dan kesihatan pekerja"
+        #"description": "Modul pembelajaran mengenai tanggungjawab sosial dan kesihatan pekerja"
     }
+    "Rujukan": {
+        "title": "Dokumen Manual, Polisi dan Prosedur",
+        "link": "https://onedrive.live.com/your-link-here-principle-5",
+        #"description": "Modul pembelajaran mengenai tanggungjawab sosial dan kesihatan pekerja"
+    }    
 }
 
 # Display modules in a grid
