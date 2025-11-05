@@ -162,6 +162,10 @@ modules = {
     "Rujukan": {
         "title": "Dokumen Manual, Polisi dan Prosedur",
         "link": "https://feldagov-my.sharepoint.com/personal/jk_felda_feldagov_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjk%5Ffelda%5Ffeldagov%5Fonmicrosoft%5Fcom%2FDocuments%2FSupporting%20Documents%20MSPO%202%2E0%2FP6%20Polisi%20dan%20Prosedur&viewid=4533d408%2D9220%2D4295%2Db459%2D4fc98a267c5c&ga=1",
+     },
+    "ICS": {
+        "title": "Internal Control System-Group Manager",
+        "link": "https://feldagov-my.sharepoint.com/personal/jk_felda_feldagov_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjk%5Ffelda%5Ffeldagov%5Fonmicrosoft%5Fcom%2FDocuments%2FSupporting%20Documents%20MSPO%202%2E0%2FInternal%20Control%20System%20%28ICS%29&viewid=4533d408%2D9220%2D4295%2Db459%2D4fc98a267c5c&ga=1",
     }
 }
 
