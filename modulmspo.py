@@ -48,6 +48,44 @@ Selamat datang ke portal E-Modul MSPO FELDA. Sila pilih prinsip yang ingin anda 
 
 st.markdown("---")
 
+# Announcement Board
+st.markdown("### 📢 Papan Pengumuman")
+
+# Announcements list - Edit this section to update announcements
+announcements = [
+    {
+        "date": "05 Nov 2024",
+        "title": "FELDA Berjaya 100% MSPO! 🎉",
+        "content": "Tahniah! FELDA telah berjaya mencapai 100% pensijilan MSPO untuk semua ladang.",
+        "type": "success"
+    },
+    {
+        "date": "Oktober 2024",
+        "title": "Jadual Internal Audit Oktober",
+        "content": "Audit dalaman akan dijalankan pada 15-20 Oktober 2024. Sila pastikan semua dokumentasi lengkap.",
+        "type": "info"
+    },
+    {
+        "date": "Oktober 2024",
+        "title": "Jadual External Audit Oktober",
+        "content": "Audit luaran MSPO dijadualkan pada 25-30 Oktober 2024. Kerjasama semua pihak amat diperlukan.",
+        "type": "warning"
+    }
+]
+
+# Display announcements
+for announcement in announcements:
+    if announcement["type"] == "success":
+        st.success(f"**{announcement['title']}** | _{announcement['date']}_\n\n{announcement['content']}")
+    elif announcement["type"] == "info":
+        st.info(f"**{announcement['title']}** | _{announcement['date']}_\n\n{announcement['content']}")
+    elif announcement["type"] == "warning":
+        st.warning(f"**{announcement['title']}** | _{announcement['date']}_\n\n{announcement['content']}")
+    else:
+        st.write(f"**{announcement['title']}** | _{announcement['date']}_\n\n{announcement['content']}")
+
+st.markdown("---")
+
 # Module links dictionary - Replace with your actual OneDrive links
 modules = {
     "Prinsip 1": {
