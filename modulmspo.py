@@ -99,14 +99,14 @@ st.markdown("## 📢 Pengumuman")
 
 announcements = [
     {
-        #"date": "1 November 2025",
+        "date": "1 November 2025",
         "title": "FELDA Berjaya Capai 100% Pensijilan MSPO! 🎉",
         "content": """Tahniah kepada semua rancangan atas kejayaan ini.  
 FELDA kini berjaya mencapai **100% pensijilan MSPO** bagi semua rancangan, hasil usaha berterusan semua pihak."""
     },
     {
-        #"date": "November 2025",
-        "title": "📅 Jadual Internal Audit November",
+        "date": "November 2025",
+        "title": "📅 Jadual Internal Audit",
         "content": """Audit dalaman akan dijalankan seperti berikut:
         
 • Gugusan Jengka 18: 5–7 November 2025
@@ -116,8 +116,8 @@ FELDA kini berjaya mencapai **100% pensijilan MSPO** bagi semua rancangan, hasil
 Sila pastikan semua dokumentasi lengkap sebelum tarikh audit."""
     },
     {
-        #"date": "November 2025",
-        "title": "📅 Jadual External Audit November",
+        "date": "November 2025",
+        "title": "📅 Jadual External Audit",
         "content": """Tiada audit luaran MSPO dijadualkan pada bulan ini.  
 Teruskan mengekalkan pematuhan kepada standard MSPO."""
     }
