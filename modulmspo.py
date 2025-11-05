@@ -52,23 +52,35 @@ st.markdown("---")
 st.markdown("### 📢 Papan Pengumuman")
 
 # Announcements list - Edit this section to update announcements
+# To write multiple lines in content, use \n\n for new paragraphs
 announcements = [
     {
         "date": "1 November 2025",
         "title": "FELDA Berjaya Capai 100% Pensijilan MSPO! 🎉",
-        "content": "Tahniah kepada semua rancangan yang terlibat. Alhamdulillah, FELDA telah berjaya mencapai 100% pensijilan MSPO untuk semua rancangan.",
+        "content": """Tahniah kepada semua rancangan yang terlibat. 
+
+Alhamdulillah, FELDA telah berjaya mencapai 100% pensijilan MSPO untuk semua rancangan.
+
+Pencapaian ini adalah hasil kerjasama yang berterusan dari semua pihak.""",
         "type": "success"
     },
     {
         "date": "November 2025",
-        "title": "Jadual Internal Audit Oktober",
-        "content": "Audit dalaman Gugusan Jengka 18 akan dijalankan pada 5-7 November 2025. Audit dalaman Gugusan Maokil akan dijalankan pada 11-13 November 2025. Sila pastikan semua dokumentasi lengkap.",
+        "title": "Jadual Internal Audit November",
+        "content": """Audit dalaman akan dijalankan seperti berikut:
+
+• Gugusan Jengka 18: 5-7 November 2025
+• Gugusan Maokil: 11-13 November 2025
+
+Sila pastikan semua dokumentasi lengkap sebelum tarikh audit.""",
         "type": "info"
     },
     {
         "date": "November 2025",
-        "title": "Jadual External Audit Oktober",
-        "content": "Tiada Audit luaran MSPO dijadualkan pada bulan ini.",
+        "title": "Jadual External Audit November",
+        "content": """Tiada audit luaran MSPO dijadualkan pada bulan ini.
+
+Sila teruskan mengekalkan pematuhan kepada standard MSPO.""",
         "type": "warning"
     }
 ]
@@ -91,32 +103,26 @@ modules = {
     "Prinsip 1": {
         "title": "Prinsip 1: Komitmen dan Tanggungjawab Pengurusan",
         "link": "https://onedrive.live.com/your-link-here-principle-1",
-        #"description": "Modul pembelajaran bagi Komitmen dan Tanggungjawab Pengurusan"
     },
     "Prinsip 2": {
         "title": "Prinsip 2: Ketelusan",
         "link": "https://onedrive.live.com/your-link-here-principle-2",
-        #"description": "Modul pembelajaran mengenai pengurusan ladang dan kemudahkerjaan"
     },
     "Prinsip 3": {
         "title": "Prinsip 3: Pematuhan Kepada Undang-Undang dan Perkara Berkaitan",
         "link": "https://onedrive.live.com/your-link-here-principle-3",
-        #"description": "Modul pembelajaran mengenai amalan pertanian yang baik"
     },
     "Prinsip 4": {
         "title": "Prinsip 4: Tanggungjawab Sosial, Kesihatan, Keselamatan dan Terma Pekerjaan",
         "link": "https://onedrive.live.com/your-link-here-principle-4",
-        #"description": "Modul pembelajaran mengenai tanggungjawab alam sekitar"
     },
     "Prinsip 5": {
         "title": "Prinsip 5: Alam Sekitar, Sumber Asli, Kepelbagaian Biologi dan Penjagaan Ekosistem",
         "link": "https://onedrive.live.com/your-link-here-principle-5",
-        #"description": "Modul pembelajaran mengenai tanggungjawab sosial dan kesihatan pekerja"
     },
     "Rujukan": {
         "title": "Dokumen Manual, Polisi dan Prosedur",
-        "link": "https://onedrive.live.com/your-link-here-principle-5",
-        #"description": "Modul pembelajaran mengenai tanggungjawab sosial dan kesihatan pekerja"
+        "link": "https://onedrive.live.com/your-link-here-rujukan",
     }    
 }
 
@@ -128,7 +134,6 @@ for idx, (key, module) in enumerate(modules.items()):
         with st.container():
             st.markdown(f'<div class="principle-card">', unsafe_allow_html=True)
             st.markdown(f"### {module['title']}")
-            st.markdown(f"_{module['description']}_")
             if st.button(f"📥 Akses {key}", key=key):
                 st.markdown(f"[Klik di sini untuk membuka modul]({module['link']})")
                 st.info(f"Anda akan dibawa ke OneDrive untuk mengakses {key}")
@@ -144,7 +149,7 @@ Untuk sebarang pertanyaan mengenai modul ini, sila hubungi:
 - **Telefon**: +60 3-XXXX XXXX
 
 ---
-© 2024 FELDA - Malaysian Sustainable Palm Oil (MSPO)
+© 2025 FELDA - Malaysian Sustainable Palm Oil (MSPO)
 """)
 
 # Sidebar with additional information
