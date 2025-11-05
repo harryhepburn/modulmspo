@@ -165,20 +165,23 @@ modules = {
     }
 }
 
-cols = st.columns(3)
-for idx, (key, module) in enumerate(modules.items()):
-    with cols[idx % 3]:
+# --- Modul Latihan (Single Column Layout) ---
+st.markdown("## 📘 Modul Latihan")
+
+for key, module in modules.items():
+    with st.container():
         st.markdown(f"""
         <div class="principle-card">
             <div class="principle-title">📗 {key}: {module['title']}</div>
         </div>
         """, unsafe_allow_html=True)
+
         if st.button(f"📥 Akses {key}", key=key):
-                # Opens link directly without showing message
-                pass
-            st.markdown('</div>', unsafe_allow_html=True)
+            # Opens link directly without showing message
+            pass
 
 st.markdown("---")
+
 
 # --- Footer ---
 st.markdown("""
