@@ -71,7 +71,7 @@ h1, h2, h3 {
     margin-bottom: 0.5rem;
 }
 
-/* Streamlit Buttons (Standard style is preferred but keeping custom for a strong brand look) */
+/* Streamlit Link Buttons */
 .stButton>button {
     width: 100%;
     background: #4CAF50; /* A pleasant green */
@@ -215,7 +215,6 @@ modules = {
 }
 
 # Create a grid of 2 columns for the module cards
-
 cols_modules = st.columns(2)
 module_keys = list(modules.keys())
 
@@ -231,12 +230,12 @@ for i, key in enumerate(module_keys):
         </div>
         """, unsafe_allow_html=True)
 
-        # Ensure the button check directly guards the st.web_browser call
-        if st.button(f"📥 Akses Modul {key}", key=f"btn_{key}"):
-            # THIS IS THE CRITICAL LINE: It only executes when the button is clicked.
-            # If the error persists, it could be due to a Streamlit version issue 
-            # or environment restriction on opening new tabs.
-            st.web_browser(module['link'])
+        # FIXED: Using st.link_button instead of st.button + st.web_browser
+        st.link_button(
+            label=f"📥 Akses Modul {key}",
+            url=module['link'],
+            use_container_width=True
+        )
             
 st.markdown("---")
 
