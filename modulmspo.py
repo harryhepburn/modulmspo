@@ -125,7 +125,7 @@ announcements = [
     {
         "date": "1 November 2025",
         "title": "FELDA Capai 100% Pensijilan MSPO! 🎉",
-        "content": "Tahniah kepada semua rancangan atas kejayaan ini. FELDA kini berjaya mencapai **100% pensijilan MSPO** bagi semua rancangan, hasil usaha berterusan semua pihak."
+        "content": "Tahniah kepada semua rancangan atas kejayaan ini. FELDA kini berjaya mencapai 100% pensijilan MSPO bagi semua rancangan, hasil usaha berterusan semua pihak."
     },
     {
         "date": "November 2025",
@@ -144,6 +144,7 @@ announcements = [
         "date": "November 2025",
         "title": "📅 Jadual Audit Luaran",
         "content": """
+        Audit luaran akan dijalankan seperti berikut:
         <ul style="list-style-type: none; padding-left: 0.5rem;">
           <li><span style="font-weight: bold;">Gugusan Triang:</span> 18-20 Nov 2025</li>
         </ul>
