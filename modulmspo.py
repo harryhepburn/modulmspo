@@ -135,7 +135,7 @@ announcements = [
         <ul style="list-style-type: none; padding-left: 0.5rem;">
             <li><span style="font-weight: bold;">Gugusan Jengka 18:</span> 5–7 Nov 2025</li>
             <li><span style="font-weight: bold;">Gugusan Maokil:</span> 11–13 Nov 2025</li>
-            <li><span style="font-weight: bold;">Gugusan Segamat:</span> 18–20 Nov 2025</li>
+            <li><span style="font-weight: bold;">Gugusan Kemahang:</span> 18–20 Nov 2025 - DITANGGUHKAN</li>
         </ul>
         <p style='margin-top: 0.5rem;'>Sila pastikan semua dokumentasi lengkap sebelum tarikh audit.</p>
         """
@@ -145,8 +145,7 @@ announcements = [
         "title": "📅 Jadual Audit Luaran",
         "content": """
         <ul style="list-style-type: none; padding-left: 0.5rem;">
-            <li>Tiada audit luaran MSPO dijadualkan pada bulan ini.</li>
-            <li>Audit Seterusnya: <span style="font-weight: bold; color: #388E3C;">Januari 2026</span> (Gugusan Kuantan)</li>
+          <li><span style="font-weight: bold;">Gugusan Triang:</span> 18-20 Nov 2025</li>
         </ul>
         <p style='margin-top: 0.5rem;'>Teruskan mengekalkan pematuhan kepada standard MSPO. Semak status di bahagian Rujukan.</p>
         """
