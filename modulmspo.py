@@ -117,9 +117,13 @@ st.info(
 
 st.markdown("---")
 
-# --- Announcement Board (Using st.columns for grid layout) ---
+import streamlit as st
+from datetime import datetime
+
+# --- Announcement Board (Updated Content) ---
 st.markdown("## 📢 Pengumuman Terkini")
 
+# Store the multi-line content using HTML lists for better formatting
 announcements = [
     {
         "date": "1 November 2025",
@@ -129,12 +133,26 @@ announcements = [
     {
         "date": "November 2025",
         "title": "📅 Jadual Audit Dalaman",
-        "content": "Audit dalaman akan dijalankan seperti berikut:\n\n• Gugusan Jengka 18: 5–7 Nov 2025\n• Gugusan Maokil: 11–13 Nov 2025. Sila pastikan semua dokumentasi lengkap."
+        "content": """
+        Audit dalaman akan dijalankan seperti berikut:
+        <ul style="list-style-type: none; padding-left: 0.5rem;">
+            <li><span style="font-weight: bold;">Gugusan Jengka 18:</span> 5–7 Nov 2025</li>
+            <li><span style="font-weight: bold;">Gugusan Maokil:</span> 11–13 Nov 2025</li>
+            <li><span style="font-weight: bold;">Gugusan Segamat:</span> 18–20 Nov 2025</li>
+        </ul>
+        <p style='margin-top: 0.5rem;'>Sila pastikan semua dokumentasi lengkap sebelum tarikh audit.</p>
+        """
     },
     {
         "date": "November 2025",
         "title": "📅 Jadual Audit Luaran",
-        "content": "Tiada audit luaran MSPO dijadualkan pada bulan ini. Teruskan mengekalkan pematuhan kepada standard MSPO. Semak status di bahagian Rujukan."
+        "content": """
+        <ul style="list-style-type: none; padding-left: 0.5rem;">
+            <li>Tiada audit luaran MSPO dijadualkan pada bulan ini.</li>
+            <li>Audit Seterusnya: <span style="font-weight: bold; color: #388E3C;">Januari 2026</span> (Gugusan Kuantan)</li>
+        </ul>
+        <p style='margin-top: 0.5rem;'>Teruskan mengekalkan pematuhan kepada standard MSPO. Semak status di bahagian Rujukan.</p>
+        """
     }
 ]
 
@@ -143,17 +161,17 @@ cols_announcements = st.columns(2)
 for i, a in enumerate(announcements):
     col = cols_announcements[i % 2] # Cycle through columns 0 and 1
     with col:
+        # NOTE: The content is now rendered directly within the announcement-card HTML.
         st.markdown(f"""
         <div class="announcement-card">
             <h4>{a['title']}</h4>
             <p style='color: #666; font-size: 0.9rem; margin-bottom: 0.5rem;'>{a['date']}</p>
-            <p>{a['content']}</p>
+            {a['content']} 
         </div>
         """, unsafe_allow_html=True)
         # Add a subtle separator for the third announcement if it's the last one
         if i == len(announcements) - 1 and len(announcements) % 2 != 0:
              st.markdown("</div>", unsafe_allow_html=True)
-
 
 st.markdown("---")
 
@@ -187,7 +205,7 @@ modules = {
         "icon": "🌳",
         "link": "https://feldagov-my.sharepoint.com/personal/jk_felda_feldagov_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjk%5Ffelda%5Ffeldagov%5Fonmicrosoft%5Fcom%2FDocuments%2FSupporting%20Documents%20MSPO%202%2E0%2FP5%20Alam%20Sekitar%2C%20Sumber%20Asli%2C%20Biodiversiti%20dan%20Perkhidmatan%20Ekosistem&viewid=4533d408%2D9220%2D4295%2Db459%2D4fc98a267c5c&ga=1",
     },
-    "Rujukan": {
+    "MANUAL": {
         "title": "Dokumen Manual, Polisi dan Prosedur",
         "icon": "📑",
         "link": "https://feldagov-my.sharepoint.com/personal/jk_felda_feldagov_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjk%5Ffelda%5Ffeldagov%5Fonmicrosoft%5Fcom%2FDocuments%2FSupporting%20Documents%20MSPO%202%2E0%2FP6%20Polisi%20dan%20Prosedur&viewid=4533d408%2D9220%2D4295%2Db459%2D4fc98a267c5c&ga=1",
@@ -231,7 +249,7 @@ with col_email:
     st.markdown("""
     Untuk sebarang pertanyaan berkaitan E-Modul MSPO FELDA:
     * **Email**: kelestarian.f@felda.net.my
-    * **Hotline**: +603-XXX-XXXX (Fictional Placeholder)
+    #* **Hotline**: +603-XXX-XXXX (Fictional Placeholder)
     """)
 
 with col_copyright:
