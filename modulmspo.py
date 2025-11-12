@@ -105,8 +105,8 @@ h1, h2, h3 {
 """, unsafe_allow_html=True)
 
 # --- Header Section (Use st.image for better integration) ---
-st.image("feldalogo.png", width=250)
-st.title("🌿 E-Modul MSPO FELDA 2.0")
+
+st.title("feldalogo.png🌿 E-Modul MSPO FELDA 2.0")
 st.markdown(
     "### Portal Latihan Pensijilan **_Malaysian Sustainable Palm Oil (MSPO) 2.0_**"
 )
