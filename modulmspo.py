@@ -105,7 +105,7 @@ h1, h2, h3 {
 """, unsafe_allow_html=True)
 
 # --- Header Section (Use st.image for better integration) ---
-st.image("https://via.placeholder.com/300x50/1B5E20/FFFFFF?text=FELDA+GROUP+LOGO", width=250)
+st.image("feldalogo.png", width=250)
 st.title("🌿 E-Modul MSPO FELDA 2.0")
 st.markdown(
     "### Portal Latihan Pensijilan **_Malaysian Sustainable Palm Oil (MSPO) 2.0_**"
@@ -241,24 +241,6 @@ st.markdown("---")
 
 
 # --- Footer ---
-st.markdown("## 📞 Hubungi Kami")
-
-col_email, col_copyright = st.columns([2, 1])
-
-with col_email:
-    st.markdown("""
-    Untuk sebarang pertanyaan berkaitan E-Modul MSPO FELDA:
-    * **Email**: kelestarian.f@felda.net.my
-    * **Hotline**: +603-21912191
-    """)
-
-with col_copyright:
-    st.markdown(f"""
-    <div style="text-align: right; color: #666; font-size: 0.85rem;">
-    © {datetime.now().year} FELDA | Malaysian Sustainable Palm Oil (MSPO)
-    </div>
-    """, unsafe_allow_html=True)
-
 
 # At the bottom of your page
 with st.expander("📖 Panduan Penggunaan", expanded=False):
@@ -275,6 +257,21 @@ with st.expander("📖 Tentang MSPO", expanded=False):
     **MSPO (Malaysian Sustainable Palm Oil)** adalah skim pensijilan nasional yang memastikan pengeluaran minyak sawit secara **mampan** melalui amalan terbaik, pematuhan undang-undang, dan tanggungjawab sosial.
     """)
 
+with st.expander("📞 Hubungi Kami", expanded=False):
+    st.markdown('<div class="sidebar-title">📞 Hubungi Kami</div>', unsafe_allow_html=True)
+    st.success("""
+    Untuk sebarang pertanyaan berkaitan E-Modul MSPO FELDA:
+    * **Email**: kelestarian.f@felda.net.my
+    * **Hotline**: +603-21912191
+    """)
+
+
+
+st.markdown(f"""
+    <div style="text-align: right; color: #666; font-size: 0.85rem;">
+    © {datetime.now().year} FELDA | Malaysian Sustainable Palm Oil (MSPO)
+    </div>
+    """, unsafe_allow_html=True)
     # Current Date for reference
     st.markdown(f"""
     <div style="margin-top: 2rem; border-top: 1px solid #ddd; padding-top: 1rem;">
